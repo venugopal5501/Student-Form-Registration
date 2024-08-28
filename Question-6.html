@@ -1,0 +1,130 @@
+<!doctype html>
+<html>
+
+<head>
+    <style>
+        body {
+            background-color: aqua;
+        }
+    </style>
+    <title>Student Form</title>
+
+<body>
+    <form id="myform" onsubmit="return validation();" method="POST" action="show.html">
+        <div class="hw">
+            <h1>
+                <center>Student Registration Form</center>
+            </h1>
+            <label for="fname">First Name</label>
+            <input type="text" id="fname" name="fname"> (max 30 charcters a-z and A-Z)
+            <br></br>
+            <label for="lname">Last Name</label>
+            <input style="white-space-collapse: 12px;" type="text" id="lname" name="lname"> (max 30 charcters a-z and
+            A-Z)
+            <br></br>
+            <label for="dob">Date of Birth</label>
+            <input type="date" id="dob" name="dob">
+            <br></br>
+            <label for="email">E-Mail ID </label>
+            <input type="text" id="email" name="email">
+            <br></br>
+            <label for="phone">Mobile Number</label>
+            <input type="text" id="phone" name="phone">
+            <br></br>
+            <label for="gender">Gender</label>
+            <input type="radio" id="male_gender" name="gender" value="Male">
+            <label for="male_gender">Male</label>
+            <input type="radio" id="female_gender" name="gender" value="Female">
+            <label for="female_gender">Female</label>
+            <br></br>
+            <label for="add">Address</label>
+            <input type="text" id="city" name="city">
+            <br></br>
+            <label for="city">City</label>
+            <input type="text" id="city1" name="city"> (max 30 charcters a-z and A-Z)
+            <br></br>
+            <label for="pin">Pin Code</label>
+            <input type="number" id="pin" name="pin"> (max 30 charcters a-z and A-Z)
+            <br></br>
+            <label for="state">State</label>
+            <input type="text" id="state" name="state">
+            <br></br>
+            <label for="country">Country</label>
+            <select id="country">
+                <option value="0">Select Option</option>
+                <option value="India">India</option>
+                <option value="USA">USA</option>
+                <option value="UAE">UAE</option>
+                <option value="Srilanka">Srilanka</option>
+                <option value="Pakistan">Pakistan</option>
+            </select>
+            <br></br>
+            <label for="hob">Hobbies</label>
+            <input style="margin:10px" type="checkbox" id="draw" name="draw" value="draw">
+            <label for="draw">Drawing</label>
+            <input style="margin:10px" type="checkbox" id="sing" name="draw" value="sing">
+            <label for="sing">Singing</label>
+            <input style="margin:10px" type="checkbox" id="Dance" name="draw" value="Dance">
+            <label for="Dance">Dancing</label>
+            <input style="margin:10px" type="checkbox" id="Sketch" name="draw" value="Sketch">
+            <label for="Sketch">Sketching</label>
+            <input style="margin:10px" type="checkbox" id="Others" name="draw" value="Others">
+            <label for="Others">Others</label>
+            <br></br>
+            <label for="Qualification">Qualification</label>
+
+        </div>
+
+        <table>
+            <tr>
+                <th>SI.NO.Examination</th>
+                <th>Board</th>
+                <th>Percentage</th>
+                <th>Year of Passing</th>
+            </tr>
+            <tr>
+                <td>1.Class X</td>
+                <td><input type="text" id="Board"></td>
+                <td><input type="text" id="Board4"></td>
+                <td><input type="text" id="Board8"></td>
+                <br></br>
+            </tr>
+
+            <tr>
+                <td>2.Class XII</td>
+                <td><input type="text" id="Board1"></td>
+                <td><input type="text" id="Board5"></td>
+                <td><input type="text" id="Board9"></td>
+            </tr>
+            <tr>
+                <td>3.Graduation</td>
+                <td><input type="text" id="Board2"></td>
+                <td><input type="text" id="Board6"></td>
+                <td><input type="text" id="Board10"></td>
+            </tr>
+            <tr>
+                <td>4.Masters</td>
+                <td><input type="text" id="Board3"></td>
+                <td><input type="text" id="Board7"></td>
+                <td><input type="text" id="Board11"></td>
+            </tr>
+        </table>
+        </div>
+        <div class="table2">
+            <table>
+                <tr>
+                    <th style="color: aqua;">helooooooooooooooi</th>
+                    <th>(10 Char Max) <span style="color: aqua;">000000001</span></th>
+                    <th>(Upto 2 decimal) <span style="color: aqua;">0000001</span></th>
+                </tr>
+            </table>
+
+            <center><input type="submit"></center>
+            <center><input type="Reset"></center>
+        </div>
+    </form>
+</body>
+<script src="validation.js"></script>
+</head>
+
+</html>
